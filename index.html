@@ -1,211 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Personal Homepage</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<style>
-  body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif; 
-    color: goldenrod;
-    background-color: #000;  background-image: url('/images/black.jpg'); 
-    background-size: cover;
-    background-position: center;
-    font-weight: 400;
-    font-size: 20px;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Homepage</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    /* removed unnecessary whitespace and organized styles */
+    @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Jersey+25+Charted&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-  .bg-dark {
-    background-color: #000;  background-image: url('/images/black.jpg'); 
-    background-size: cover;
-    background-position: center;
-  }
-
-  .navbar-dark .navbar-nav .nav-link {
-    color: goldenrod;
-  }
-
-  .navbar-dark .navbar-nav .nav-link:hover {
-    color:goldenrod;
-  }
-  .nav-item active .nav-link{
- color:goldenrod;
-  }
-  .navbar-custom .navbar-nav .nav-link:hover {
-    color: white;
-  }
-
-  .text-center {
-    flex: start;
-    text-align: start;
-  }
-
-  .img-fluid {
-    border: 1px solid rgb(253, 253, 136);
-    margin-top: 20px;
-    border-radius: 50%;
-    box-shadow: 2px 3px 5px goldenrod;
-    width: 100%;
-  }
-
-  @media (min-width: 992px) {
-    .img-fluid {
-      max-width: 50%;
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: "Open Sans", sans-serif;
+      color: goldenrod;
+      background-color: #000;
+      background-image: url('/images/black.jpg');
+      background-size: cover;
+      background-position: center;
+      font-weight: 600;
+      font-size: 20px;
     }
-  }
 
-  .img-fluid:hover {
-    transform: scale(0.5);
-    transition: transform 0.1s ease-in-out;
-  }
+   .bg-dark {
+      background-color: #000;
+      background-image: url('/images/black.jpg');
+      background-size: cover;
+      background-position: center;
+    }
 
-  
-  .header-content {
-    padding-top: 100px;
-  }
+   .navbar-dark.navbar-nav.nav-link {
+      color: goldenrod;
+    }
 
-  .header-content h1,
-  .header-content h3,
-  .header-content .lead {
-    color: goldenrod; 
-  }
+   .navbar-dark.navbar-nav.nav-link:hover {
+      color: goldenrod;
+    }
 
-  .btn-primary,
-  .btn-secondary {
-    margin-right: 10px; 
-    font-size: 1.2rem; 
-    transition: all 0.3s ease-in-out; 
-  }
+   .nav-item.active.nav-link {
+      color: goldenrod;
+    }
 
-  .btn-primary:hover,
-  .btn-secondary:hover {
-    transform: scale(1.05); 
-  }
-  .text-center{
-    color: goldenrod;
-  }
-  .navbar-brand{
-    color: black;
-  }
-  .services {
-  background-image: url('/images/black.jpg'); /* Change 'background-image.jpg' to your image path */
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  color: goldenrod; /* Text color */
-}
+   .navbar-custom.navbar-nav.nav-link:hover {
+      color: white;
+    }
 
-.services h3 {
-  color: #fff; /* Heading color */
-}
+   .text-center {
+      flex: start;
+      text-align: start;
+    }
 
-.services p {
-  color: #fff; /* Paragraph color */
-}
+   .img-fluid {
+      border: 1px solid rgb(253, 253, 136);
+      margin-top: 20px;
+      border-radius: 50%;
+      box-shadow: 2px 3px 5px goldenrod;
+      width: 100%;
+    }
 
-</style>
+    @media (min-width: 992px) {
+     .img-fluid {
+        max-width: 50%;
+      }
+    }
 
+   .img-fluid:hover {
+      transform: scale(0.5);
+      transition: transform 0.1s ease-in-out;
+    }
+
+   .header-content {
+      padding-top: 100px;
+    }
+
+   .header-content h1,
+   .header-content h3,
+   .header-content.lead {
+      color: goldenrod;
+    }
+
+   .btn-primary,
+   .btn-secondary {
+      margin-right: 10px;
+      font-size: 1.2rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+   .btn-primary:hover,
+   .btn-secondary:hover {
+      transform: scale(1.05);
+    }
+
+   .text-center {
+      color: goldenrod;
+    }
+
+   .navbar-brand {
+      color: black;
+    }
+
+   .services {
+      background-image: url('/images/black.jpg');
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      color: goldenrod;
+    }
+
+   .services h3 {
+      color: #fff;
+    }
+
+   .services p {
+      color: #fff;
+    }
+
+   .skills ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+   .skills ul li {
+      margin-bottom: 10px;
+    }
+
+   .skills ul li::before {
+      content: '•';
+      margin-right: 5px;
+    }
+
+   .contact p {
+      margin-bottom: 10px;
+    }
+
+   .contact a {
+      color: goldenrod;
+    }
+
+   .contact a:hover {
+      color: white;
+    }
+  </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="#">GETRUDE</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Resume</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">My Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-      </ul>
+  <!-- removed unnecessary whitespace and organized HTML structure -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">GETRUDE</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Resume</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-<div class="container-textimage text-center bg-dark ">
-  <div class="row">
-    <div class="col-md-6">
-      <header class="text-center text-light" style="height: 100vh;">
-        <div class="container d-flex align-items-center justify-content-center h-100">
-          <div class="text-start">
-            <h6>HELLO!</h6>
-            <h3>I'm Getrude Kipkemoi</h3>
-            <p class="lead">Front-End Developer</p>
-            <a href="#" class="btn btn-primary btn-lg">HIRE ME</a>
-            <a href="#" class="btn btn-secondary btn-lg">MY WORKS</a>
+  </nav>
+
+  <div class="container-textimage text-center bg-dark">
+    <div class="row">
+      <div class="col-md-6">
+        <header class="text-center text-light" style="height: 100vh;">
+          <div class="container d-flex align-items-center justify-content-center h-100">
+            <div class="text-start">
+              <h6>HELLO!</h6>
+              <h3>I'm Getrude Kipkemoi</h3>
+              <p class="lead">Front-End Developer</p>
+              <a href="#" class="btn btn-primary btn-lg">HIRE ME</a>
+              <a href="#" class="btn btn-secondary btn-lg">MY WORKS</a>
+            </div>
           </div>
+        </header>
+      </div>
+      <div class="col-md-6 order-md-5 mt-5">
+        <div class="text-center">
+          <img src="/images/pp.jpeg" alt="Descriptive Image Text" class="img-fluid">
         </div>
-      </header>
-   
-    </div>
-    <div class="col-md-6 order-md-5 mt-5">
-      <div class="text-center">
-        <img src="/images/pp.jpeg" alt="Descriptive Image Text" class="img-fluid">
-      
       </div>
     </div>
   </div>
-</div>
-<section class="services container my-5 bg-dark mt-1">
-  <h1 class="text-center mb-5">About</h1>
-  <!-- Services offered -->
-  <!-- Example: Graphics Design, UX/UI Design, etc. -->
-  <!-- Customize with your own services -->
-  <div class="row">
-      <div class="col-md-4">
-          <h3>Graphics Design</h3>
-          <p>Let's make your brand stand out from competitors.</p>
-      </div>
-      <div class="col-md-4">
-          <h3>UX/UI Design</h3>
-          <p>Creating interactive user interfaces for your digital products.</p>
-      </div>
-      <div class="col-md-4">
-          <h3>Product Design</h3>
-          <p>Turn your product ideas into something people can use.</p>
-      </div>
-      <!-- Add more service columns as needed -->
-  </div>
-</section>
 
-<!-- my skills -->
+  <section class="services container my-5 bg-dark mt-1">
+    <h1 class="text-center mb-5">About</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Graphics Design</h3>
+        <p>Let's make your brand stand out from competitors.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>UX/UI Design</h3>
+        <p>Creating interactive user interfaces for your digital products.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Product Design</h3>
+        <p>Turn your product ideas into something people can use.</p>
+      </div>
+    </div>
+  </section>
 
-<section class="skills container my-5">
-  <!-- Skills details -->
-  <!-- Example: HTML, CSS, JavaScript, etc. -->
-  <!-- Customize with your own skills -->
-  <h2>My Skills</h2>
-  <ul>
+  <section class="skills container my-5">
+    <h2>My Skills</h2>
+    <ul>
       <li>HTML/CSS</li>
       <li>JavaScript</li>
       <li>UI/UX Design</li>
-      <!-- Add more skills -->
-  </ul>
-</section>
-<section class="contact container my-5">
-  <!-- Contact details -->
-  <!-- Example: Email, LinkedIn, GitHub, etc. -->
-  <!-- Customize with your own contact information -->
-  <h2>Contact Me</h2>
-  <p>Email: <a href="mailto:your@email.com">gettiesirma@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
-  <!-- Add more contact information -->
-</section>
+    </ul>
+  </section>
 
+  <section class="contact container my-5">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:your@email.com">gettiesirma@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+  </section>
 
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
-

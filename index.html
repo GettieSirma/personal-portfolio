@@ -3,42 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Homepage</title>
+  <title>Getrude Kipkemoi</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <style>
-    /* Improved styles */
+  
 
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: #000;
-      color: goldenrod;
-    }
-
-    .navbar {
-      padding: 1rem;
-    }
-
-    .navbar-brand {
-      font-size: 1.5rem;
-      color: goldenrod;
-    }
-
-    .navbar-nav .nav-link {
-      color: goldenrod;
-      font-weight: 500;
-    }
-
-    .navbar-nav .nav-link:hover {
+      background-color: black;
       color: white;
     }
 
+#logo {
+    font-size: 1.5em;
+    margin-left: 100px;
+}
+ul li {
+    display: inline;
+    margin-right: 10px;
+}
+#connectBtn {
+    margin-right: 100px;
+    border-radius: 50px;
+    padding: 5px;
+}
+.custom-navbar {
+  background-color: transparent;
+}
+
+
+
+.custom-navbar-nav .nav-link {
+  color: white;
+}
+
+.custom-navbar-nav .nav-link:hover {
+  color: #AF6128;
+}
+.custom-connect-btn {
+  background-image: linear-gradient(to right, #982EA9, #A24281, #AF6128);
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.custom-connect-btn:hover {
+  background-color: #6a0dad;
+}
+
+.custom-section {
+  padding: 5rem 0;
+  background-color: #f4f4f4;
+}
+
     .profile-image {
-      border: 4px solid goldenrod;
+      border: 1px solid rgb(162, 66, 129);
       border-radius: 50%;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-      max-width: 100%;
+ 
+      max-width: 50%;
       height: auto;
       transition: transform 0.3s ease-in-out;
     }
@@ -47,9 +73,7 @@
       transform: scale(1.05);
     }
 
-    .about-section {
-      padding: 3rem 0;
-    }
+  
 
     .card {
       background-color: transparent;
@@ -69,38 +93,160 @@
     .contact-section {
       padding: 3rem 0;
     }
+
+    /* about e */
+    /* .gradient-heading {
+  position: relative;
+  color: white;
+} */
+/* gradient on span text */
+
+.gradient-text {
+  background: linear-gradient(to right, #982EA9, #A24281, #AF6128);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientAnimation 5s ease infinite alternate;
+
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+/* connect and resume */
+.connect-btn {
+  background: linear-gradient(to right, #982EA9, #A24281, #AF6128);
+}
+
+.resume-btn {
+  background:black;
+}
+
+.btn1 {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.btn1{
+  border-radius: 50px;
+  background-color:#A24281;
+  padding: 10px;
+  color: black;
+  display: inline-block;
+  color: white;
+}
+
+.btn1:hover {
+  background-color:#6a0dad;
+}
+
+
+    
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-pic1 {
+    width: 200px;
+    height: 200px;
+
+    border: 5px solid white;
+}
+
+.content {
+    flex: 2;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.skills {
+    margin: 20px 0;
+}
+
+.skill {
+    background: #AF6128;
+    margin-bottom: 10px;
+    width: 75%;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat {
+    background: #6a0dad;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
   </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">GETRUDE</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Resume</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-        </ul>
-      </div>
+  <!-- navbar -->
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container-fluid">
+    <div class="navbar-brand" id="logo">Getrude</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+   </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav custom-navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <button class="  custom-connect-btn">Connect With Me</button>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
+
 
   <!-- Header Section -->
   <div class="container text-center header-content">
     <div class="row">
       <div class="col-md-6 mx-auto mt-5">
         <header>
-          <h6>HELLO!</h6>
-          <h1 class="mb-4">I'm Getrude Kipkemoi</h1>
-          <p class="lead mb-4">Front-End Developer</p>
-          <a href="#" class="btn btn-primary btn-lg mr-2">HIRE ME</a>
-          <a href="#" class="btn btn-secondary btn-lg">MY WORKS</a>
+        
+          <h1 class="gradient-heading mb-4">
+            <span class="gradient-text">I'm Getrude Kipkemoi,</span>frontend <br>
+            developer based in Kenya.
+          </h1>
+          <p>I am a frontend developer from Nairobi, Kenya with 2 years of experience in multiple companies like Microsoft and google and CCI Kenya.</p>
+          <a href="#" class="btn1 connect-btn">Connect with me</a>
+          <a href="#" class="btn1 resume-btn">My resume</a>          
         </header>
       </div>
       <div class="col-md-6 mt-5">
@@ -109,9 +255,34 @@
     </div>
   </div>
 
+  <!-- about section 1.0 -->
+
+  
+  <div class="container mt-3">
+    
+    <div class="content">
+        <h1 class="about-section">About me</h1>
+        <p>I am an experienced Frontend Developer with over a 2 years of professional expertise in the field. <br>
+          Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing <br> to their success and growth. <br>
+
+          My passion for frontend development is not only reflected in my extensive experience but also in the <br> enthusiasm and dedication I bring to each project.</p>
+        <div class="skills">
+            <div class="skill">HTML & CSS</div>
+            <div class="skill">React JS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Next JS</div>
+        </div>
+        <div class="stats">
+            <div class="stat">10+ YEARS OF EXPERIENCE</div>
+            <div class="stat">90+ PROJECTS COMPLETED</div>
+            <div class="stat">15+ HAPPY CLIENTS</div>
+        </div>
+    </div>
+</div>
+
   <!-- About Section -->
   <section class="container about-section">
-    <h2 class="text-center mb-5">About</h2>
+  
     <div class="row">
       <div class="col-md-4">
         <div class="card p-4">

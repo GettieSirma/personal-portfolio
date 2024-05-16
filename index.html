@@ -9,11 +9,23 @@
   
 
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+*
+{
+   box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+}
+    
     body {
       font-family: 'Roboto', sans-serif;
       background-color: black;
       color: white;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    html{
+      scroll-behavior: smooth;
     }
 
 #logo {
@@ -107,6 +119,7 @@ ul li {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   animation: gradientAnimation 5s ease infinite alternate;
+  font-weight: bolder;
 
 }
 
@@ -118,6 +131,19 @@ ul li {
     background-position: 100% 50%;
   }
 }
+/* media gierry for image on smaller screen */
+@media (max-width: 767.98px) {
+  .order-md-1,
+  .order-md-2 {
+    order: initial !important;
+  }
+  .mb-3 {
+    margin-bottom: 100px; /* Adjust the margin bottom as needed */
+  }
+}
+
+
+
 /* connect and resume */
 .connect-btn {
   background: linear-gradient(to right, #982EA9, #A24281, #AF6128);
@@ -152,7 +178,7 @@ ul li {
     
 .container {
     display: flex;
-    align-items: center;
+    align-items: start;
 }
 
 .profile {
@@ -171,20 +197,54 @@ ul li {
     flex: 2;
 }
 
+
 h1 {
     font-size: 2em;
     margin-bottom: 20px;
 }
+/* skills  */
+
 
 .skills {
-    margin: 20px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .skill {
-    background: #AF6128;
-    margin-bottom: 10px;
-    width: 75%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
+
+.skill-name {
+  flex: 1;
+  font-weight: bold;
+}
+
+.skill-bar {
+  width: 100vh; /* Adjust skill bar width as needed */
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-left: 10px; /* Add space between skill name and skill bar */
+}
+
+.skill-level {
+  height: 100%;
+  background: linear-gradient(to right, #982EA9, #A24281, #AF6128); /* Gradient background */
+  border-radius: 5px;
+}
+
+.about-image {
+  width: 100%; /* make the image full width of the column */
+  height: 100%; /* adjust the height as needed */
+  object-fit: cover; /* make the image cover the entire area */
+  border-radius: 10px; /* add a slight border radius for a nice touch */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle box shadow */
+  margin: 20px; /* add some margin to create some space around the image */
+}
+
+/* end skills */
 
 .stats {
     display: flex;
@@ -192,7 +252,7 @@ h1 {
 }
 
 .stat {
-    background: #6a0dad;
+  
     padding: 10px;
     width: 200px;
     text-align: center;
@@ -203,6 +263,7 @@ h1 {
 <body>
   <!-- navbar -->
 <!-- navbar -->
+
 <nav class="navbar navbar-expand-lg custom-navbar">
   <div class="container-fluid">
     <div class="navbar-brand" id="logo">Getrude</div>
@@ -232,50 +293,76 @@ h1 {
   </div>
 </nav>
 
-
-
   <!-- Header Section -->
   <div class="container text-center header-content">
     <div class="row">
-      <div class="col-md-6 mx-auto mt-5">
+      <div class="col-md-6 mt-3 mb-3 order-md-2">
+        <img src="/images/pp.jpeg" alt="Profile Image" class="profile-image">
+      </div>
+      <div class="col-md-6 mx-auto mt-md-5 order-md-1">
         <header>
-        
           <h1 class="gradient-heading mb-4">
-            <span class="gradient-text">I'm Getrude Kipkemoi,</span>frontend <br>
+            <span class="gradient-text">I'm Getrude Kipkemoi,</span> frontend <br>
             developer based in Kenya.
           </h1>
-          <p>I am a frontend developer from Nairobi, Kenya with 2 years of experience in multiple companies like Microsoft and google and CCI Kenya.</p>
-          <a href="#" class="btn1 connect-btn">Connect with me</a>
-          <a href="#" class="btn1 resume-btn">My resume</a>          
+          <p>I am a frontend developer from Nairobi, Kenya with 2 years of experience in multiple companies like Microsoft and Google and CCI Kenya.</p>
+          <a href="#" class="btn1 connect-btn mt-5">Connect with me</a>
+          <a href="#" class="btn1 resume-btn mt-5">My resume</a>          
         </header>
-      </div>
-      <div class="col-md-6 mt-5">
-        <img src="/images/pp.jpeg" alt="Profile Image" class="profile-image">
       </div>
     </div>
   </div>
-
+  
   <!-- about section 1.0 -->
 
   
-  <div class="container mt-3">
-    
-    <div class="content">
-        <h1 class="about-section">About me</h1>
-        <p>I am an experienced Frontend Developer with over a 2 years of professional expertise in the field. <br>
-          Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing <br> to their success and growth. <br>
-
-          My passion for frontend development is not only reflected in my extensive experience but also in the <br> enthusiasm and dedication I bring to each project.</p>
-        <div class="skills">
-            <div class="skill">HTML & CSS</div>
-            <div class="skill">React JS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Next JS</div>
+  <div class="container">
+    <div class="row">
+      <!-- image md3 -->
+      <div class="col-md-3 mt-3">
+        <img src="/images/laptops.jpg" alt="Your Image" class="about-image">
+      </div>
+      <div class="col-md-9">
+        <div class="content">
+          <h1 class="about-section text-center mt-3">About me</h1>
+          <p class="text-start">I am an experienced Frontend Developer with over 2 years of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth. My passion for frontend development is not only reflected in my extensive experience but also in the enthusiasm and dedication I bring to each project.</p>
+          <div class="skills">
+            <div class="skill">
+              <span class="skill-name">HTML & CSS</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 100%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span class="skill-name">React JS</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 85%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span class="skill-name">Next JS</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 80%;"></div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- <div class="col-md-3">
+        <img src="/images/laptops.jpg" alt="Your Image" class="about-image">
+      </div> -->
+    </div>
+  </div>
         <div class="stats">
-            <div class="stat">10+ YEARS OF EXPERIENCE</div>
-            <div class="stat">90+ PROJECTS COMPLETED</div>
-            <div class="stat">15+ HAPPY CLIENTS</div>
+            <div class="stat"><span>2+ </span> <br> YEARS OF EXPERIENCE</div>
+            <div class="stat"><span>5+</span> <br> PROJECTS COMPLETED</div>
+            <div class="stat"><span>7+</span> <br> HAPPY CLIENTS</div>
         </div>
     </div>
 </div>

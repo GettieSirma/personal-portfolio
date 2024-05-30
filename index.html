@@ -6,86 +6,107 @@
   <title>Getrude Kipkemoi</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <style>
-  
-
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-*
-{
-   box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: black;
-      color: white;
+    * {
       box-sizing: border-box;
       padding: 0;
       margin: 0;
-    }
-    html{
+      border: none;
+      text-decoration: none;
+      outline: none;
       scroll-behavior: smooth;
+      font-family: "Poppins", sans-serif;
+   
+      font-size: 100%;
     }
 
-#logo {
-    font-size: 1.5em;
-    margin-left: 100px;
-}
-ul li {
-    display: inline;
-    margin-right: 10px;
-}
-#connectBtn {
-    margin-right: 100px;
-    border-radius: 50px;
-    padding: 5px;
-}
-.custom-navbar {
-  background-color: transparent;
-}
+    body {
+   
+      background-color: rgb(39, 32, 32);
+      color: white;
+      align-items: center;
+      justify-content: center;
+    }
 
+    .navbar {
+      padding: 1rem;
+      background-color: transparent;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
 
+    .navbar a {
+      color: white;
+      padding: 0 1rem;
+      transition: color 0.3s ease;
+      padding: 0.5rem 1rem;
+    }
 
-.custom-navbar-nav .nav-link {
-  color: white;
-}
+    .navbar a:hover {
+      color: #982EA9;
+    }
 
-.custom-navbar-nav .nav-link:hover {
-  color: #AF6128;
-}
-.custom-connect-btn {
-  background-image: linear-gradient(to right, #982EA9, #A24281, #AF6128);
-  border: none;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 50px;
-  cursor: pointer;
-}
+    .connect-btn {
+      background-image: linear-gradient(to right, #982EA9, #A24281, #AF6128);
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-left: 30px;
+    
+    }
+    
+    .connect-btn1 {
+      background-image: linear-gradient(to right, #982EA9, #A24281, #AF6128);
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+ 
+    
+    }
+    .resume-btn{
+      /* background-image: linear-gradient(to right, #982EA9, #A24281, #AF6128); */
+      border: none;
+      color: black;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 50px;
+      margin-left: 20px;
+    border-color:#6a0dad ;
+    }
 
-.custom-connect-btn:hover {
-  background-color: #6a0dad;
-}
+    .connect-btn:hover {
+      background-color: #6a0dad;
+    }
 
-.custom-section {
-  padding: 5rem 0;
-  background-color: #f4f4f4;
-}
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5rem 0;
+      /* background-color: #f4f4f4; */
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
 
     .profile-image {
       border: 1px solid rgb(162, 66, 129);
       border-radius: 50%;
- 
-      max-width: 50%;
+      /* max-width: 50%; */
+      width: 75%;
       height: auto;
-      transition: transform 0.3s ease-in-out;
+      /* transition: transform 0.2s ease-in-out; */
     }
 
     .profile-image:hover {
-      transform: scale(1.05);
+      transform: scale(1.0);
     }
-
-  
 
     .card {
       background-color: transparent;
@@ -106,101 +127,42 @@ ul li {
       padding: 3rem 0;
     }
 
-    /* about e */
-    /* .gradient-heading {
-  position: relative;
-  color: white;
-} */
-/* gradient on span text */
+    .gradient-text {
+      background: linear-gradient(to right, #982EA9, #A24281, #AF6128);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: gradientAnimation 5s ease infinite alternate;
+      font-weight: bolder;
+    }
 
-.gradient-text {
-  background: linear-gradient(to right, #982EA9, #A24281, #AF6128);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: gradientAnimation 5s ease infinite alternate;
-  font-weight: bolder;
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
 
-}
+    .about-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      margin: 20px;
+    }
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-/* media gierry for image on smaller screen */
-@media (max-width: 767.98px) {
-  .order-md-1,
-  .order-md-2 {
-    order: initial !important;
-  }
-  .mb-3 {
-    margin-bottom: 100px; /* Adjust the margin bottom as needed */
-  }
-}
+    .stats {
+      display: flex;
+      justify-content: space-between;
+    }
 
-
-
-/* connect and resume */
-.connect-btn {
-  background: linear-gradient(to right, #982EA9, #A24281, #AF6128);
-}
-
-.resume-btn {
-  background:black;
-}
-
-.btn1 {
-  display: inline-block;
-  padding: 10px 20px;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-.btn1{
-  border-radius: 50px;
-  background-color:#A24281;
-  padding: 10px;
-  color: black;
-  display: inline-block;
-  color: white;
-}
-
-.btn1:hover {
-  background-color:#6a0dad;
-}
-
-
-    
-.container {
-    display: flex;
-    align-items: start;
-}
-
-.profile {
-    flex: 1;
-    text-align: center;
-}
-
-.profile-pic1 {
-    width: 200px;
-    height: 200px;
-
-    border: 5px solid white;
-}
-
-.content {
-    flex: 2;
-}
-
-
-h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    .stat {
+      padding: 10px;
+      width: 200px;
+      text-align: center;
 }
 /* skills  */
 
@@ -235,96 +197,87 @@ h1 {
   border-radius: 5px;
 }
 
-.about-image {
-  width: 100%; /* make the image full width of the column */
-  height: 100%; /* adjust the height as needed */
-  object-fit: cover; /* make the image cover the entire area */
-  border-radius: 10px; /* add a slight border radius for a nice touch */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle box shadow */
-  margin: 20px; /* add some margin to create some space around the image */
-}
 
-/* end skills */
+    .portfolio-grid-overlay {
+      padding: 20px;
+      background-color: #f7f7f7;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin: 1em auto;
+      max-width: 800px;
+    }
 
-.stats {
-    display: flex;
-    justify-content: space-between;
-}
-
-.stat {
-  
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-}
-
+    .portfolio-grid-overlay img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
   <!-- navbar -->
-<!-- navbar -->
-
-<nav class="navbar navbar-expand-lg custom-navbar">
-  <div class="container-fluid">
-    <div class="navbar-brand" id="logo">Getrude</div>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-   </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav custom-navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-        <button class="  custom-connect-btn">Connect With Me</button>
-      </ul>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Getrude</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <button class="connect-btn1">Connect With Me</button>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
   <!-- Header Section -->
-  <div class="container text-center header-content">
-    <div class="row">
-      <div class="col-md-6 mt-3 mb-3 order-md-2">
-        <img src="/images/pp.jpeg" alt="Profile Image" class="profile-image">
-      </div>
-      <div class="col-md-6 mx-auto mt-md-5 order-md-1">
-        <header>
-          <h1 class="gradient-heading mb-4">
-            <span class="gradient-text">I'm Getrude Kipkemoi,</span> frontend <br>
-            developer based in Kenya.
-          </h1>
-          <p>I am a frontend developer from Nairobi, Kenya with 2 years of experience in multiple companies like Microsoft and Google and CCI Kenya.</p>
-          <a href="#" class="btn1 connect-btn mt-5">Connect with me</a>
-          <a href="#" class="btn1 resume-btn mt-5">My resume</a>          
-        </header>
+  <div class="header-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="/images/pp.jpeg" alt="Profile Image" class="profile-image">
+        </div>
+        <div class="col-md-6">
+          <header>
+            <h3>Hello,I'm</h3>
+            <h1 class="gradient-text mb-4">
+               Getrude Kipkemoi,
+              <br>
+              <h3>Frontend developer</h3>
+            </h1>
+            <p>I am a frontend developer, With knowledge in web development and design, i offer the best projects resulting in quality work.</p>
+            <button class="btn1 connect-btn">Connect with me</button>
+            <button class="btn1 resume-btn">My resume</button>
+          </header>
+        </div>
       </div>
     </div>
   </div>
-  
-  <!-- about section 1.0 -->
 
-  
+  <!-- about section 1.0 -->
   <div class="container">
     <div class="row">
-      <!-- image md3 -->
-      <div class="col-md-3 mt-3">
+      <!-- <div class="col-md-3">
         <img src="/images/laptops.jpg" alt="Your Image" class="about-image">
-      </div>
-      <div class="col-md-9">
+      </div> -->
+      <div class="col-md-12">
         <div class="content">
-          <h1 class="about-section text-center mt-3">About me</h1>
+          <h1 class="about-section text-start">About me</h1>
           <p class="text-start">I am an experienced Frontend Developer with over 2 years of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth. My passion for frontend development is not only reflected in my extensive experience but also in the enthusiasm and dedication I bring to each project.</p>
           <div class="skills">
             <div class="skill">
@@ -333,8 +286,7 @@ h1 {
                 <div class="skill-level" style="width: 100%;"></div>
               </div>
             </div>
-            <div class="skill">
-              <span class="skill-name">React JS</span>
+            <div class="skill"><span class="skill-name">React JS</span>
               <div class="skill-bar">
                 <div class="skill-level" style="width: 85%;"></div>
               </div>
@@ -354,22 +306,23 @@ h1 {
           </div>
         </div>
       </div>
-      <!-- <div class="col-md-3">
-        <img src="/images/laptops.jpg" alt="Your Image" class="about-image">
-      </div> -->
     </div>
   </div>
-        <div class="stats">
-            <div class="stat"><span>2+ </span> <br> YEARS OF EXPERIENCE</div>
-            <div class="stat"><span>5+</span> <br> PROJECTS COMPLETED</div>
-            <div class="stat"><span>7+</span> <br> HAPPY CLIENTS</div>
+
+  <div class="stats">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col order-last">
+          <img src="path/to/your/image1.jpg" class="img-fluid" alt="First Image">
+          <p>First in DOM, ordered last</p>
         </div>
-    </div>
-</div>
+    <div class="stat"><span>2+ </span> <br> YEARS OF EXPERIENCE</div>
+    <div class="stat"><span>5+</span> <br> PROJECTS COMPLETED</div>
+    <div class="stat"><span>7+</span> <br> HAPPY CLIENTS</div>
+  </div>
 
   <!-- About Section -->
   <section class="container about-section">
-  
     <div class="row">
       <div class="col-md-4">
         <div class="card p-4">

@@ -340,12 +340,14 @@ color: black;
 margin: 0;
 }
 
-/* edecation section */
+/* edecation section*/
+/* education section*/
 .heading{
   font-size: 2rem;
   text-align: center;
   margin-top: 2rem 0;
 }
+
 .education{
   padding:50px 15px;
   background: var(--second-bg-color);
@@ -366,29 +368,35 @@ margin: 0;
   width: 5px;
   height: 100%;
   background-color: var(--main-color);
-  left: calc(50% -1px);
+  left: 50%;
+  transform: translateX(-50%);
 }
+
 .timeline-item{
   margin-bottom: 40px;
   width: 100%;
   position: relative;
-}
-.timeline-item:last-child{
-  margin-bottom: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 .timeline-item:nth-child(odd){
-  padding-right: calc(50% + 30px);
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.timeline-item:nth-child(even){
+  flex-direction: row;
+  text-align: left;
 }
 .timeline-dot{
   height: 21px;
   width: 21px;
   background-color: var(--main-color);
-  box-shadow: 0 0 25px var(--main-color),
-   0 0 50px var(--main-color);
-   position: absolute;
-   left: calc(50% + -8px);
-   border-radius: 50%;
-   top: 10px;
+  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  top: 10px;
 }
 .timeline-date{
   font-size: 20px;
@@ -399,11 +407,14 @@ margin: 0;
 .timeline-content{
   background-color: var(--bg-color);
   border: 3px solid var(--main-color);
-  padding: 30px 50px;
-  border-radius: 4rem;
+  padding: 30px;
+  border-radius: 1rem;
   box-shadow: 0 0 10px var(--main-color);
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  width: calc(50% - 50px);
+  min-width: 200px;
+  text-align: center;
 }
 .timeline-content:hover{
   transform: scale(1.05);
@@ -422,16 +433,61 @@ margin: 0;
   line-height: 22px;
 }
 
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
   width: 15px;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
   background-color: var(--bg-color);
   width: 50px;
 }
+
+@media screen and (max-width: 768px) {
+  .timeline-content {
+    width: 100%;
+    min-width: initial;
+  }
+  
+  .timeline-item {
+    flex-direction: column;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content {
+    margin-top: 40px;
+  }
+  
+ .timeline-item:nth-child(even).timeline-content {
+    margin-bottom: 40px;
+  }
+  
+ .timeline-dot {
+    top: 0;
+  }
+  
+ .timeline-date {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+ .timeline-content {
+    padding: 20px;
+  }
+  
+ .timeline-content h3 {
+    font-size: 18px;
+  }
+  
+ .timeline-content p {
+    font-size: 14px;
+  }
+}
+
 
 /* Skills Section */
 .skills-section {
@@ -499,7 +555,7 @@ margin: 0;
 .contact-section {
   padding: 3rem 0;
   background-color:var(--bg-color);
-  margin: 0 20px;
+  margin: 0 50px;
 }
 
 .contact-section h2 {

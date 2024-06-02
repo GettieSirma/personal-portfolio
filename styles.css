@@ -340,6 +340,56 @@ color: black;
 margin: 0;
 }
 
+/* edecation section */
+.heading{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem 0;
+}
+.education{
+  padding:50px 15px;
+  background: var(--second-bg-color);
+}
+.education h2{
+  margin-bottom: 2rem;
+}
+.timeline-items{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.timeline-items::before{
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: var(--main-color);
+  left: calc(50% -1px);
+}
+.timeline-item{
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+.timeline-item:last-child{
+  margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+  padding-right: calc(50% + 30px);
+}
+.timeline-dot{
+  height: 21px;
+  width: 21px;
+  background-color: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color),
+   0 0 50px var(--main-color);
+   position: absolute;
+   left: calc(50% + -8px);
+   border-radius: 50%;
+   top: 10px;
+}
 
 /* Skills Section */
 .skills-section {
@@ -403,72 +453,6 @@ margin: 0;
 .service-card:hover {
   transform: translateY(-5px);
 }
-/* education */
-.education-section {
-  background-color:var(--bg-color);
-  padding: 40px 20px;
-  border-bottom: 1px solid #ddd;
-}
-
-.education-section h1 {
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.education-card {
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.education-card h3 {
-  font-weight: bold;
-  color: #333;
-  margin-top: 0;
-}
-
-.education-card p {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 10px;
-}
-
-.education-card p:last-child {
-  font-size: 14px;
-  color: #999;
-}
-
-.education-card::before {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-color: #333;
-  border-radius: 50%;
-  margin: 20px auto;
-}
-
-.education-card:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px);
-}
-
-.education-card:hover::before {
-  background-color: #666;
-}
-@media (max-width: 768px) {
-  .education-card h3 {
-    font-size: 1.25em;
-  }
-  .education-card p {
-    font-size: 0.9em;
-  }
-}
-
 /* Contact Section */
 .contact-section {
   padding: 3rem 0;

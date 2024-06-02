@@ -3,367 +3,293 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Getrude Kipkemoi</title>
+  <title>Getrude Kipkemoi | Frontend Developer</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    
-    * {
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-      border: none;
-      text-decoration: none;
-      outline: none;
-      scroll-behavior: smooth;
-      font-family: "Poppins", sans-serif;
-   
-      font-size: 100%;
-    }
-
-    body {
-   
-      background-color: rgb(39, 32, 32);
-      color: white;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .navbar {
-      padding: 1rem;
-      background-color: transparent;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .navbar a {
-      color: white;
-      padding: 0 1rem;
-      transition: color 0.3s ease;
-      padding: 0.5rem 1rem;
-    }
-
-    .navbar a:hover {
-      color: #982EA9;
-    }
-
-    .connect-btn {
-      background-image: linear-gradient(to right, #982EA9, #A24281, #AF6128);
-      border: none;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      margin-left: 30px;
-    
-    }
-    
-    .connect-btn1 {
-      background-image: linear-gradient(to right, #982EA9, #A24281, #AF6128);
-      border: none;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
- 
-    
-    }
-    .resume-btn{
-      /* background-image: linear-gradient(to right, #982EA9, #A24281, #AF6128); */
-      border: none;
-      color: black;
-      padding: 0.5rem 1rem;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      margin-top: 50px;
-      margin-left: 20px;
-    border-color:#6a0dad ;
-    }
-
-    .connect-btn:hover {
-      background-color: #6a0dad;
-    }
-
-    .header-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 5rem 0;
-      /* background-color: #f4f4f4; */
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    }
-
-    .profile-image {
-      border: 1px solid rgb(162, 66, 129);
-      border-radius: 50%;
-      /* max-width: 50%; */
-      width: 75%;
-      height: auto;
-      /* transition: transform 0.2s ease-in-out; */
-    }
-
-    .profile-image:hover {
-      transform: scale(1.0);
-    }
-
-    .card {
-      background-color: transparent;
-      border: none;
-      color: goldenrod;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .skills-section {
-      padding: 3rem 0;
-    }
-
-    .contact-section {
-      padding: 3rem 0;
-    }
-
-    .gradient-text {
-      background: linear-gradient(to right, #982EA9, #A24281, #AF6128);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      animation: gradientAnimation 5s ease infinite alternate;
-      font-weight: bolder;
-    }
-
-    @keyframes gradientAnimation {
-      0% {
-        background-position: 0% 50%;
-      }
-      100% {
-        background-position: 100% 50%;
-      }
-    }
-
-    .about-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      margin: 20px;
-    }
-
-    .stats {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .stat {
-      padding: 10px;
-      width: 200px;
-      text-align: center;
-}
-/* skills  */
-
-
-.skills {
-  display: flex;
-  flex-direction: column;
-}
-
-.skill {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.skill-name {
-  flex: 1;
-  font-weight: bold;
-}
-
-.skill-bar {
-  width: 100vh; /* Adjust skill bar width as needed */
-  height: 20px;
-  background-color: #f0f0f0;
-  border-radius: 5px;
-  margin-left: 10px; /* Add space between skill name and skill bar */
-}
-
-.skill-level {
-  height: 100%;
-  background: linear-gradient(to right, #982EA9, #A24281, #AF6128); /* Gradient background */
-  border-radius: 5px;
-}
-
-
-    .portfolio-grid-overlay {
-      padding: 20px;
-      background-color: #f7f7f7;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-      margin: 1em auto;
-      max-width: 800px;
-    }
-
-    .portfolio-grid-overlay img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-  </style>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- navbar -->
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="#">Getrude</a>
+      <a href="#home" class="logo">Getrude
+        <span>Kipkemoi</span></a>
+      <i class='bx bx-menu' id="menu-icon"></i>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#home" class="active">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Me</a>
+            <a class="nav-link" href="#about">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="#education">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link" href="#my skills">My Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
-          <button class="connect-btn1">Connect With Me</button>
         </ul>
       </div>
     </div>
   </nav>
+<!-- Header Section -->
 
-  <!-- Header Section -->
-  <div class="header-content">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img src="/images/pp.jpeg" alt="Profile Image" class="profile-image">
+  <div class="container">
+    <div class="header-content" id="home">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="/images/pp.jpeg" alt="Profile Picture" class="home-img">
+      </div>
+      <div class="col-md-6 header-content-p">
+        <header>
+          <h1>Hello, Its <span>Getrude</span></h1>
+          <h3 class="text-animation">I'm a <span></span></h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab autem maxime vel cumque expedita.</p>
+          <div class="social-icons">
+            <a href=""><i class='bx bxl-github'></i></a>
+            <a href=""><i class='bx bxl-linkedin'></i></a>
+            <a href=""><i class='bx bxl-instagram' ></i></a>
+            <a href=""><i class='bx bxl-twitter'></i></a>
+          </div>
+          <div class="btn-group">
+            <a href="#contact" class="btn">Hire Me</a>
+            <a href="#contact" class="btn">Contact</a>
+          </div>
+        </header>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- education -->
+<section class="education" id="#Education">
+  <h2 class="heading">Education</h2>
+  <div class="timeline-items">
+    <div class="timeline-item">
+      <div class="timeline-dot">
+        <div class="timeline-date">2024</div>
+        <div class="timeline-content">
+          <h3>College</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, explicabo aspernatur minus commodi modi neque maiores at necessitatibus possimus distinctio.</p>
         </div>
-        <div class="col-md-6">
-          <header>
-            <h3>Hello,I'm</h3>
-            <h1 class="gradient-text mb-4">
-               Getrude Kipkemoi,
-              <br>
-              <h3>Frontend developer</h3>
-            </h1>
-            <p>I am a frontend developer, With knowledge in web development and design, i offer the best projects resulting in quality work.</p>
-            <button class="btn1 connect-btn">Connect with me</button>
-            <button class="btn1 resume-btn">My resume</button>
-          </header>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">
+        <div class="timeline-date">2024</div>
+        <div class="timeline-content">
+          <h3>University</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, explicabo aspernatur minus commodi modi neque maiores at necessitatibus possimus distinctio.</p>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">
+        <div class="timeline-date">2020</div>
+        <div class="timeline-content">
+          <h3>Internship</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, explicabo aspernatur minus commodi modi neque maiores at necessitatibus possimus distinctio.</p>
+        </div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">
+        <div class="timeline-date">2017</div>
+        <div class="timeline-content">
+          <h3>High School</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, explicabo aspernatur minus commodi modi neque maiores at necessitatibus possimus distinctio.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- About Section -->
+  <div class="about-section" id="about">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>About Me</h1>
+        <p>I am a dedicated software developer with a love for crafting beautiful and functional web applications. With a solid foundation in HTML, CSS, JavaScript, React, and MySQL, I enjoy turning complex problems into simple, elegant solutions. Over the past 2 years, I’ve developed a keen eye for detail and a passion for creating seamless user experiences. I'm excited about the opportunity to bring my skills to your team.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <div class="container services-section">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>My Services</h1>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <h3>Web Development</h3>
+          <p>I create high-quality, responsive websites that cater to the specific needs of your business.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <h3>UI/UX Design</h3>
+          <p>I create user-friendly and engaging designs that cater to your business requirements.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <h3>Maintenance</h3>
+          <p>I provide timely maintenance and updates to ensure the longevity of your website.</p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- about section 1.0 -->
-  <div class="container">
+
+  <!-- Skills Section -->
+  <div class="container skills-section" id="my skills">
     <div class="row">
-      <!-- <div class="col-md-3">
-        <img src="/images/laptops.jpg" alt="Your Image" class="about-image">
-      </div> -->
       <div class="col-md-12">
-        <div class="content">
-          <h1 class="about-section text-start">About me</h1>
-          <p class="text-start">I am an experienced Frontend Developer with over 2 years of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth. My passion for frontend development is not only reflected in my extensive experience but also in the enthusiasm and dedication I bring to each project.</p>
-          <div class="skills">
-            <div class="skill">
-              <span class="skill-name">HTML & CSS</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 100%;"></div>
-              </div>
-            </div>
-            <div class="skill"><span class="skill-name">React JS</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 85%;"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <span class="skill-name">JavaScript</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 90%;"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <span class="skill-name">Next JS</span>
-              <div class="skill-bar">
-                <div class="skill-level" style="width: 80%;"></div>
-              </div>
-            </div>
+        <h1>My Skills</h1>
+      </div>
+      <div class="col-md-4">
+        <div class="skill-card">
+          <h3>HTML</h3>
+          <div class="skill-bar">
+            <div class="skill-bar-inner" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>CSS</h3>
+          <div class="skill-bar">
+            <div class="skill-bar-inner" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <div class="skill-bar">
+            <div class="skill-bar-inner" style="width: 95%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="skill-card">
+          <h3>React</h3>
+          <div class="skill-bar">
+            <div class="skill-bar-inner" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Node.js</h3>
+          <div class="skill-bar">
+            <div class="skill-bar-inner" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>MySQL</h3>
+          <div class="skill-bar">
+            <div class="skill-bar-inner" style="width: 80%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="skill-card">
+          <h3>Git</h3>
+          <div class="skill-bar">
+            <div class="skill-bar-inner" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Adobe Photoshop</h3>
+          <div class="skill-bar">
+            <div class="skill-bar-inner" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Adobe Illustrator</h3>
+          <div class="skill-bar">
+            <div class="skill-bar-inner" style="width: 80%;"></div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="stats">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col order-last">
-          <img src="path/to/your/image1.jpg" class="img-fluid" alt="First Image">
-          <p>First in DOM, ordered last</p>
-        </div>
-    <div class="stat"><span>2+ </span> <br> YEARS OF EXPERIENCE</div>
-    <div class="stat"><span>5+</span> <br> PROJECTS COMPLETED</div>
-    <div class="stat"><span>7+</span> <br> HAPPY CLIENTS</div>
-  </div>
-
-  <!-- About Section -->
-  <section class="container about-section">
+  <!-- Projects Section -->
+  <div class="container projects-section">
     <div class="row">
+      <div class="col-md-12">
+        <h1>My Projects</h1>
+      </div>
       <div class="col-md-4">
-        <div class="card p-4">
-          <h3>Graphics Design</h3>
-          <p>Let's make your brand stand out from competitors.</p>
+        <div class="project-card">
+          <h3>My Personal Website</h3>
+          <p>A responsive, SEO-optimized website built with React and Node.js.</p>
+          <a href="#" class="btn">View Project</a>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card p-4">
-          <h3>UX/UI Design</h3>
-          <p>Creating interactive user interfaces for your digital products.</p>
+        <div class="project-card">
+          <h3>Company Website</h3>
+          <p>A fully functional website for a client built with HTML, CSS, and JavaScript.</p>
+          <a href="#" class="btn">View Project</a>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card p-4">
-          <h3>Product Design</h3>
-          <p>Turn your product ideas into something people can use.</p>
+        <div class="project-card">
+          <h3>E-commerce Store</h3>
+          <p>A full-fledged e-commerce website built with React, Redux, and Node.js.</p>
+          <a href="#" class="btn">View Project</a>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section class="container skills-section">
-    <h2 class="text-center mb-5">My Skills</h2>
-    <ul class="list-unstyled text-center">
-      <li>HTML/CSS</li>
-      <li>JavaScript</li>
-      <li>UI/UX Design</li>
-    </ul>
-  </section>
+  </div>
 
   <!-- Contact Section -->
-  <section class="container contact-section">
-    <h2 class="text-center mb-5">Contact Me</h2>
-    <p class="text-center">Email: <a href="mailto:gettiesirma@gmail.com">gettiesirma@gmail.com</a></p>
-    <p class="text-center">LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
-  </section>
+  <div class="contact-section" id="contact">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Contact Me</h1>
+      </div>
+      <div class="col-md-6">
+        <form action="">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h3>Get in Touch</h3>
+        <p>Feel free to contact me with any questions or concerns.</p>
+        <p>Email: example@email.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+        <p>Social Media:</p>
+       <ul>
+          <li><a href="#" class="social-link">LinkedIn</a></li>
+          <li><a href="#" class="social-link">Twitter</a></li>
+          <li><a href="#" class="social-link">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

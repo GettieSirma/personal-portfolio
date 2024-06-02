@@ -315,7 +315,7 @@ content: "UI / UX Designer";
 }
 .btn:hover{
   transform: scale(1.0);
-  box-shadow: 0 0 50px var(--main-color);
+  box-shadow: 0 0 30px var(--main-color);
 
 }
 .btn-group{
@@ -498,16 +498,16 @@ margin: 0;
 /* Contact Section */
 .contact-section {
   padding: 3rem 0;
-  background-color: #f7f7f7;
+  background-color:var(--bg-color);
   margin: 0 20px;
 }
 
 .contact-section h2 {
-  color: #212121;
+  color:var(--text-color);
 }
 
 .contact-section p {
-  color: #333;
+  color:var(--text-color);
 }
 
 /* Media Queries */

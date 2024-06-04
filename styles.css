@@ -613,132 +613,47 @@ box-shadow: 0 0 25px var(--main-color);
 
 
 
-/* Skills Section */
-.skills-section {
-  padding: 3rem 0;
+/* contacts */
+.contact{
+  background-color: var(--bg-color);
 }
-
-.skill {
+.contact h2{
+  margin-bottom: 3rem;
+  align-items: center;
+}
+.contact form{
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: frem auto;
+  text-align: center;
 }
-
-.skill-name {
-  flex: 1;
-  font-weight: bold;
-}
-
-.skill-bar {
-  width: 100vh;
-  height: 20px;
-  background-color: var(--bg-color);
-  border-radius: 5px;
-  margin-left: 10px;
-}
-
-.skill-level {
-  height: 100%;
-  background: linear-gradient(to right, #982EA9, #A24281, #AF6128);
-  border-radius: 5px;
-}
-
-/* Stats Section */
-.stats {
+.contact form .input-box{
   display: flex;
-  justify-content: space-between;
-  padding: 3rem 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+  width: 100%;
+  padding: 2.5rem;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  background: var(--second-bg-color);
+  border-radius: 2px solid var(--main-color);
+  margin: 1.5rem 0;
+  resize: none;
+}
+.contact form .btn{
+  margin-top: 2rem;
+}
+.footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color: var(--second-bg-color);
 }
 
-.stat {
-  padding: 10px;
-  width: 200px;
-  text-align: center;
-}
 
-/* Services Section */
-
-
-.services-section h1 {
-  text-align: center;
-  padding: 1rem 1rem;
-}
-
-.service-card {
-  background-color:var(--bg-color);
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  transition: transform 0.3s ease-in-out;
-} 
-
-.service-card:hover {
-  transform: translateY(-5px);
-}
-/* Contact Section */
-.contact-section {
-  padding: 3rem 0;
-  background-color:var(--bg-color);
-  margin: 0 50px;
-}
-
-.contact-section h2 {
-  color:var(--text-color);
-}
-
-.contact-section p {
-  color:var(--text-color);
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-  .header-content {
-    flex-direction: column;
-  }
-
-  .profile-image {
-    width: 50%;
-    margin: 0 20px;
-  }
-}
-
-@media (max-width: 992px) {
-  .header-content {
-    flex-direction: column;
-  }
-
-  .profile-image {
-    width: 50%;
-  }
-}
-
-/* Dark Mode */
-body.dark-mode {
-  background-color: #333;
-  color: #fff;
-}
-
-body.dark-mode a {
-  color: #fff;
-}
-
-body.dark-mode a:hover {
-  color: #6a0dad;
-}
-
-body.dark-mode.navbar {
-  background-color: #333;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-body.dark-mode.theme-toggle i {
-  color: #333;
-}
-
-body.dark-mode #sun-icon {
-  display: block;
-}
-
-body.dark-mode #moon-icon {
-  display: none;
-}

@@ -574,7 +574,7 @@ box-shadow: 0 0 25px var(--main-color);
 .wrapper{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 1rem;
+  /* gap: 1rem; */
 }
 .testimonial-item{
   min-height: 400px;
